@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Sen:wght@400;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+    font-family:sen;
+}
+body{
+    background-color: #000;
+}
+header{
+    height:80px;
+    width:100%;
+    padding:0 50px;
+    z-index: 2;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+}
+
+.sidebar{
+    height:100%;
+    width:0;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+    background:rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition:0.5s;
+    padding-top: 50px;
+}
+.sidebar a{
+    padding:8px 8px 8px 30px;
+    display:block;
+    text-decoration:none;
+    font-size:25px;
+    color:#818181;
+    transition:0.3s;
+}
+.sidebar a:hover{
+    color:#fff;
+}
+.sidebar .closebtn{
+    position:absolute;
+    top:0;
+    right:25px;
+    font-size:35px;
+}
+.openbtn{
+    font-size:15px;
+    color:#fff;
+    cursor:pointer;
+    position:fixed;
+    right:50px;
+    z-index: 1;
+}
+.logo{
+    color:#fff;
+    text-decoration: none;
+    font-size:20px;
+    font-weight:bold;
+}
+#home{
+    height:100vh;
+    position: relative;
+    width:100%;
+}
+#home::before{
+    content:'';
+    width:100%;
+    height:400px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index:1;
+    background:linear-gradient(to top,#000,transparent);
+}
+.frstBg{
+    position: relative;
+    top:0;
+    background-size:cover;
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    opacity:0.8;
+}
+.hero{
+    margin:0 auto;
+    position: absolute;
+    top:35%;
+    width:100%;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+}
+.hero h1{
+    font-size:70px;
+    color:#f1f1f1;
+    font-weight:bold;
+    padding-bottom: 10px;
+}
+.hero p{
+    color:#f1f1f1;
+    font-size:17px;
+    line-height: 24px;
+    width:60%;
+    margin:0 auto;
+}
+
+#about{
+    width:100%;
+    height:100vh;
+    position:relative;
+    color:#f1f1f1;
+}
+
+
+@media (max-width:600px){
+    header, .hero{
+        padding:0 20px;
+    }
+    .openbtn{
+        right:20px;
+    }
+    .hero h1{
+        font-size:35px;
+    }
+    .hero p{
+        font-size:15px;
+        line-height: 18px;
+        width:100%;
+    }
+
+}

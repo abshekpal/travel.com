@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Mountain Destinations</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Wanderlust.</a>
+        <div id="mySidebar" class="sidebar">
+            <a href="#" class="closebtn" onclick="closeNav()">x</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+        </div>
+        <a href="#" class="openbtn" onclick="openNav()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+    </header>
+
+    <section id="home">
+        <img src="Images/banner.jpg" alt="mountain" class="frstBg">
+        <div class="hero">
+            <h1>Mountain hiking with us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sapiente sit ratione 
+                voluptatem fugiat, est odio officiis harum reprehenderit nobis quaerat maxime placeat 
+                dicta repudiandae quod neque doloribus distinctio culpa!</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>about us</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Qui cupiditate aperiam quas vitae, distinctio culpa illum 
+            labore quaerat id. Facilis optio sint dicta aspernatur! Assumenda?</p>
+    </section>
+
+    <script>
+        function openNav(){
+            document.getElementById("mySidebar").style.width="250px";
+        }
+        function closeNav(){
+            document.getElementById("mySidebar").style.width="0px";
+        }
+    </script>
+</body>
+</html>
