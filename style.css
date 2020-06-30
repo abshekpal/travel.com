@@ -264,13 +264,16 @@ header{
     .hero{
         top:30%;
     }
-    header, .hero, #about{
-        padding:auto 20px;
+    header, .hero{
+        padding:0 20px;
+    }
+    #about{
+        padding:100px 20px;
     }
     .openbtn{
         right:20px;
     }
-    .hero h1, #about h1{
+    .hero h1, #about .content h1{
         font-size:35px;
     }
     .hero p{
@@ -282,15 +285,22 @@ header{
         font-size:17px;
         padding:20px 0;
     }
-
-}
-
-@media (max-width: 600px) {
     #about{
         height:auto;
     }  
     #about .destinationList{
         display: flex;
         flex-direction: column;
+    }
+
+}
+
+@media (min-width: 600px) {
+    #about{
+        height:auto;
+    }  
+    #about .destinationList{
+        display: flex;
+        justify-content: space-evenly;
     }
 }
