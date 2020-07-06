@@ -335,6 +335,11 @@ header{
         flex-direction: column;
         padding:100px 20px;
     }
+    #services .img-box{
+        width:100%;
+        height:100%;
+        position: relative;
+    }
     .serv-info{
         width:100%;
         padding-top: 50px;
